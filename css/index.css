@@ -1,0 +1,183 @@
+#header {
+	background: #ffcc31;
+}
+
+#header img{
+	width: 30px;
+}
+
+
+#logo {
+	color: #ff1100;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+	color: #ff1100;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #e77137;
+}
+/*
+#navbar .nav-item .nav-link{
+	color: purple;
+}
+
+
+#navbar .nav-item .nav-link a:active {
+	color: #ff1100;
+}
+*/
+.text-platzi {
+	color: yellow !Important;
+}
+
+.text-platzi:hover{
+	color: white;
+}
+
+.modal-content {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fffb04;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: .3rem;
+	outline: 0;
+}
+
+.modal-footer {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	padding: .75rem;
+	border-top: none;
+	border-bottom-right-radius: calc(.3rem - 1px);
+	border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-header {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+	border-bottom: none;
+	border-top-left-radius: calc(.3rem - 1px);
+	border-top-right-radius: calc(.3rem - 1px);
+}
+
+.btn-cancelar{
+	background-color: #e77137;
+	color: white;
+	border-color: transparent;
+}
+
+.btn-cancelar:hover {
+background-color: #c74808;
+color: white;
+border-color: transparent;
+}
+
+.btn-platzi {
+	background-color:  #ffcc31;
+	color: white;
+}
+
+.btn-platzi:hover {
+	background-color: #ad8a21;
+	color: white;
+}
+
+.card {
+	height: 100%;
+}
+
+.card img {
+ height: 348px;
+ object-fit: cover;
+}
+
+#place-time {
+	background-color: #343a40;
+	color: white;
+}
+
+#place-time img {
+	max-width: 100%;
+}
+
+#badgeRuby{
+	background-color: red;
+	color: white;
+}
+
+#main .carousel-inner img {
+max-height: 70vh;
+object-fit: cover;
+filter: grayscale(70%);
+}
+
+#carousel {
+	position: relative;
+}
+
+#carousel .overlay {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	background-color: rgba(0,0,0,0.5);
+
+	color: white;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+	height: 100%
+}
+
+
+
+/*
+body {
+	background: yellow;
+}
+*/
+
+footer {
+	background-color: #ffcc31;
+}
+
+footer a {
+	color: #e77137;
+}
+
+footer a:hover {
+	color: #ff1100;
+	text-decoration: none;
+}
+/*
+.a{
+	color: orange;
+}
+.footer {
+	background: linear-gradient(90deg, #1c3643 0, #273b47 50%, #1e5372);
+}
+*/
