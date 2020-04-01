@@ -29,6 +29,29 @@
 	color: #ff1100;
 }
 */
+
+/* Identidad*/
+
+#significadoGAMA {
+	padding-left: 5%;
+}
+
+
+ @media only screen and (min-width: 800px) {
+
+	#identidad img {
+	background-color: transparent;
+	float: left;
+	margin-right: 25%;
+	}
+}
+
+.text-primary {
+	color: #ff1100 !important;
+}
+
+/*Botones generales*/
+
 .text-platzi {
 	color: yellow !Important;
 }
@@ -125,7 +148,7 @@ border-color: transparent;
 	color: white;
 }
 
-#main .carousel-inner img {
+#tour .carousel-inner img {
 max-height: 70vh;
 object-fit: cover;
 filter: grayscale(70%);

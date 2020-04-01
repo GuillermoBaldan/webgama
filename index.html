@@ -11,7 +11,7 @@
     <title>Proyecto Bootstrap</title>
     
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+  <body data-spy="scroll" data-target="#navbar" data-offset="65">
         <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
       <a class="navbar-brand logo" id="logo"  href="#">
@@ -23,15 +23,17 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto"><li class="nav-item">
+          <a class="nav-link" href="#identidad">Quiénes somos<span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#main">Tour Misionero<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#tour">Tour Misionero<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#speakers">El Equipo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#conviertete-en-orador">Únete a las misiones</a>
+          <a class="nav-link" href="#misiones">Únete a las misiones</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modaloración">Enviar petición de oración</a>
@@ -42,9 +44,47 @@
 </nav>
     <!-- header -->
     <!-- /header -->
-
-    <!-- Main --> 
-    <main id="main">
+    <!-- Identidad -->
+    <section id="identidad">
+    	<div class="container-fluid">
+        <div class="row">
+          <div id="significadoGAMA" class="col-12 col-lg-6 pt-4 pb-4 align-self-center">
+            <h2>¿Qué significa <span class="text-primary">GAMA</span>?</h2>
+            <p><span class="text-primary">Global Awakening Movement Association</span> somos un grupo de personas que
+           	compartimos una serie de inquietudes entorno al evangelio y la iglesia de Cristo. Creemos que Dios está 
+           	despertando y comisionando a su Iglesia alrededor de toda la tierra para cumplir con su llamado y alcanzar el 
+           	destino que Dios tiene para ella. 
+            </p>
+           </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <img class="float-right" src="images/logoGAMA.png" alt="Logotipo de GAMA">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 pt-4 pb-4">
+            <h2 class="text-center">VISION</h2>
+            <p class="text-center">Ser parte del <span class="text-primary">despertar</span> que Dios tiene para Su Iglesia.
+            </p>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+          </div>
+          <div class="col-12 col-lg-4 pt-4 pb-4">
+            <h2 class="text-center">MISION</h2>
+            <p class="text-center">A través de diferentes iniciativas de <span class="text-primary">evangelismo</span> evangelismo y <span class="text-primary">misiones</span> queremos extender el despertar de la Iglesia de Cristo.
+            </p>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+          </div>
+          <div class="col-12 col-lg-4 pt-4 pb-4">
+            <h2 class="text-center">VALORES</h2>
+            <p class="text-center">Identificamos la Palabra de Dios plenamente en la <span class="text-primary">Biblia</span> y confiamos en el <span class="text-primary">Espíritu Santo</span> como nuestro guía.
+            </p>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Identidad -->
+    <!-- tour --> 
+    <tour id="tour">
         <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel"  data-pause="false">
             <div class="carousel-inner">
             	<div class="carousel-item active">
@@ -77,8 +117,8 @@
                 </div>
             </div>
           </div>
-    </main>
-    <!-- /Main-->
+    </tour>
+    <!-- /tour-->
 
     <!-- Speakers -->
     <section id="speakers" class="mt-4">
@@ -140,8 +180,8 @@
     </section>
 	-->
     <!-- /Lugar y Fecha -->
-    <!-- Conviertete en Orador -->
-    <section id="conviertete-en-orador" class="pt-3 pb-3">
+    <!-- Unete a las misiones -->
+    <section id="misiones" class="pt-3 pb-3">
       <div class="container">
         <div class="row">
           <div class="col text-uppercase text-center">
@@ -181,7 +221,7 @@
         </div>
       </div>
     </section>
-    <!-- /Conviertete en Orador -->
+    <!-- /Únete a las misiones -->
     <!--footer-->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
