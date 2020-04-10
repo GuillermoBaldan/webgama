@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <title>Proyecto Bootstrap</title>
+    <title>GAMA MISSION</title>
     
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="65">
@@ -199,21 +199,21 @@
             <form>
               <div class="form-row">
                 <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Nombre">
+                  <input type="text" class="form-control" id="missionary-name" placeholder="Nombre">
                 </div>
                 <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Apellido">
+                  <input type="text" class="form-control" id="missionary-surname" placeholder="Apellido">
                 </div>
               </div> 
               <div class="form-row">
                 <div class="form-group col">
-                  <textarea name="text" class="form-control form-control-lg" placeholder="Qué te gustaría hacer?"></textarea>
+                  <textarea name="text" class="form-control form-control-lg" id="missionary-skill" placeholder="Qué te gustaría hacer?"></textarea>
                   <small class="form-text text-muted">En breve nos pondremos en contacto contigo</small>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
-                  <button type="button" class="btn btn-platzi btn-block">Enviar</button>
+                  <button type="button" onclick="sendMissionaryForm()" class="btn btn-platzi btn-block">Enviar</button>
                 </div>
               </div>
             </form>
@@ -268,13 +268,13 @@
         <form>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Compártenos tu petición o motivo de agradecimiento</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" id="petition-text"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-platzi">Enviar mensaje</button>
+        <button type="button" class="btn btn-platzi" onclick="sendPetition()" data-dismiss="modal">Enviar mensaje</button>
       </div>
     </div>
   </div>
@@ -293,17 +293,17 @@
         <form>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Escríbenos tu email</label>
-            <input class="form-control" id="message-text"></input>
+            <input class="form-control" id="form-email"></input>
           </div>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Escríbenos tu número de teléfono</label>
-            <input class="form-control" id="message-text"></input>
+            <input class="form-control" id="form-phone"></input>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-platzi">Enviar</button>
+        <button type="button" onclick="sendTourCompetitor()"class="btn btn-platzi" data-dismiss="modal">Enviar</button>
       </div>
     </div>
   </div>
@@ -322,17 +322,17 @@
         <form>
           <div class="form-group">
             <label for="message-text" class="col-form-label">¿En qué te podemos ayudar?</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" id="contact-subject"></textarea>
           </div>
             <div class="form-group">
             <label for="message-text" class="col-form-label">Escríbenos tu email</label>
-            <input class="form-control" id="message-text"></input>
+            <input class="form-control" id="contact-email"></input>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-platzi">Enviar mensaje</button>
+        <button type="button" onclick="sendContact()" class="btn btn-platzi data-dismiss="modal" data-dismiss="modal"">Enviar mensaje</button>
       </div>
     </div>
   </div>
@@ -376,6 +376,27 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCClADFQo4NVRIH3HwQIGd3Z0bQ7uJytUs",
+    authDomain: "gama-website-6054f.firebaseapp.com",
+    databaseURL: "https://gama-website-6054f.firebaseio.com",
+    projectId: "gama-website-6054f",
+    storageBucket: "gama-website-6054f.appspot.com",
+    messagingSenderId: "352339550861",
+    appId: "1:352339550861:web:99e7c3cc9235ddd9"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
