@@ -111,13 +111,13 @@
 
 .btn-cancelar:hover {
 background-color: #c74808;
-color: white;
+color: #fffb04;
 border-color: transparent;
 }
 
 .btn-platzi {
-	background-color: #fffb04;
-	color: white;
+	background-color: #c74808;
+	color: #fffb04;
 }
 
 .btn-platzi:hover {
