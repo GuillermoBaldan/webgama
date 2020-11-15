@@ -68,7 +68,7 @@
 	flex-direction: column;
 	width: 100%;
 	pointer-events: auto;
-	background-color: #fffb04;
+	background-color: #ffcc31;
 	background-clip: padding-box;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: .3rem;
@@ -116,7 +116,7 @@ border-color: transparent;
 }
 
 .btn-platzi {
-	background-color:  #ffcc31;
+	background-color: #fffb04;
 	color: white;
 }
 
