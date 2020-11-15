@@ -284,7 +284,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Inscripción al seminario</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -294,26 +294,35 @@
               action="https://formspree.io/f/xjvawjkq"
               method="POST"
               >
-              <!--
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">Dinos por qué quieres apuntarte al seminario</label>
-                  <textarea class="form-control" id="petition-text"></textarea>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
-                  <button type="submit" class="btn btn-platzi" onclick="sendPetition()" data-dismiss="modal">Enviar mensaje</button>
-                </div>
-              -->
-              <label>
-                Your email:
-                <input type="text" name="_replyto">
+                           
+              <div class="form-group text-center">
+              <label for="message-text" class="col-form-label">
+                <div class="text-left" style="margin-bottom: 0.5em;">
+                Dinos por qué quieres apuntarte al seminario
+               </div>
+                <textarea class="form-control" name="message"  rows="4" cols="58"></textarea>
+              
+              
               </label>
-              <label>
-                Your message:
-                <textarea name="message"></textarea>
+            </div>
+            </div>
+              <div class="form-group text-center">
+              <label for="message-text" class="col-form-label">
+                <div class="text-left" style="margin-bottom: 0.5em;">
+                Escríbenos tu email y te contactaremos
+                </div>
+                <input class="form-control" type="text" name="_replyto" size="56">
               </label>
-              <button type="submit">Send</button>
-              </form>
+            </div>
+            
+              <!-- your other form fields go here -->
+              <div class="modal-footer">
+              <button type="submit" class="btn btn-platzi">Send</button>
+              <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
+              </div>
+            
+                 </form>
+              
             </div>
             
           </div>
