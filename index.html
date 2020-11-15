@@ -280,7 +280,34 @@
       
     <!-- Modal -->
     <!--<div class="modal fade" id="modaloración" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
-  
+      <div class="modal fade" id="modalseminario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form
+              action="https://formspree.io/f/xjvawjkq"
+              method="POST"
+              >
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Dinos por qué quieres apuntarte al seminario</label>
+                  <textarea class="form-control" id="petition-text"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-platzi" onclick="sendPetition()" data-dismiss="modal">Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
 <div class="modal fade" id="modaloración" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
