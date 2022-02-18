@@ -134,6 +134,11 @@
   object-fit: cover;
 }
 
+#seminario-announcement-banner {
+  width: 100vw;
+  height: 95%;
+}
+
 #place-time {
   background-color: #343a40;
   color: white;
