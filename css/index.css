@@ -1,5 +1,6 @@
 #header {
-  background: #ffcc31;
+  background: white;
+  border: 1px solid #fece15;
 }
 
 #header img {
@@ -7,18 +8,19 @@
 }
 
 #logo {
-  color: #ff1100;
+  color: #88af27;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #ff1100;
+  color: #fece15;
+  font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #e77137;
+  color: #88af27;
 }
 /*
 #navbar .nav-item .nav-link{
@@ -46,13 +48,13 @@
 }
 
 .text-primary {
-  color: #ff1100 !important;
+  color: #88af27 !important;
 }
 
 /*Botones generales*/
 
 .text-platzi {
-  color: #e77137 !important;
+  color: #88af27 !important;
   font-weight: 600;
 }
 
@@ -116,13 +118,13 @@
 }
 
 .btn-platzi {
-  background-color: #c74808;
+  background-color: #88af27;
   color: white;
 }
 
 .btn-platzi:hover {
-  background-color: #ad8a21;
-  color: #fffb04;
+  background-color: #638d00;
+  color: white;
 }
 
 .card {
@@ -132,6 +134,12 @@
 .card img {
   height: 348px;
   object-fit: cover;
+}
+
+#logo-gama {
+  margin: 0px;
+  padding: 0px;
+  width: 50vw;
 }
 
 #seminario-announcement-banner {
@@ -188,15 +196,17 @@ body {
 */
 
 footer {
-  background-color: #ffcc31;
+  background-color: white;
+  border: 1px solid #fece15;
 }
 
 footer a {
-  color: #e77137;
+  color: #88af27;
 }
 
 footer a:hover {
-  color: #ff1100;
+  color: #fece15;
+  font-weight: bold;
   text-decoration: none;
 }
 /*
