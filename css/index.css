@@ -1,3 +1,14 @@
+/* Scroll bar hidden Edge y Chrome */
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Scroll bar hidden firefox */
+html{ 
+  scrollbar-width: none;
+}
+
+
 #header {
   background: white;
   border: 1px solid #fece15;
